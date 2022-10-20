@@ -8,8 +8,11 @@ import vidya_pujari from "../components/images/vidya_pujari.png"
 function Faculty() {
   return (
     <div>
-      <IntroBar pagename="Faculty" />
+      {/* <IntroBar pagename="Faculty" /> */}
 
+    <p style={{display:"flex", justifyContent:"center", fontWeight:"bold", fontFamily: "sans-serif"}}>
+        Meet our talented and precious faculty!
+    </p>
       <FacultyCard name="Pooja Shetty" image={pooja_shetty} dept="Information Technology" />
 
       <FacultyCard name="Vidya Pujari" image={vidya_pujari} dept="Information Technology" />

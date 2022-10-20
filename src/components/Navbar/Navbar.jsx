@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 export default function Navbar() {
   return (
     // <!-- Navbar -->
-    <div>
+    <div style={{marginBottom:"15px"}}>
       <div className={classes.navbar}>
         <img
           src={logo}

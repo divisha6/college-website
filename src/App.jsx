@@ -7,18 +7,24 @@ import Course from "./pages/Course";
 
 function App() {
   return (
-    <div className="App">
+    <div
+      className="App"
+      style={{
+        fontFamily: "sans-serif",
+        minHeight: "100vh",
+        flexDiirection: "column",
+      }}
+    >
       <header className="App-header">
         {/* <img src={logo} className="App-logo" alt="logo" /> */}
         <Navbar />
-
-        <Routes>
-          <Route path="/Home" element = {<HomePage/>} />
-          <Route path="/faculty" element = {<Faculty/>} />
-          <Route path="/courses" element = {<Course/>} />
-        </Routes>
-        
       </header>
+      <Routes>
+        <Route path="/Home" element={<HomePage />} />
+        <Route path="/faculty" element={<Faculty />} />
+        <Route path="/courses" element={<Course />} />
+      </Routes>
+      
     </div>
   );
 }
