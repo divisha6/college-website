@@ -8,9 +8,16 @@ function Card(props) {
                 <h2 className="card__title"> {props.title} </h2>
                 <p className="card__desc">{props.description}</p>
             </div>
-            <button className="card__button" style={{marginBottom:'30px', color:"#370752"}}>Apply</button>
+            {/* event handling */}
+            <button onClick= {Apply} className="card__button" style={{marginBottom:'30px', color:"#370752"}}>Apply</button>
         </div>
     );
+}
+
+function Apply() {
+        return (
+            alert("you have applied to this course!")
+        );
 }
 
 export default Card;
